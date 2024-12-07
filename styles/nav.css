@@ -1,0 +1,66 @@
+header {
+  /* display: none; */
+}
+header nav {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  white-space: nowrap;
+}
+
+header nav .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  color: white;
+}
+header nav .left i {
+  font-size: 2.5rem;
+}
+
+header nav .right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+header nav .right a {
+  color: white;
+  font-size: 2rem;
+}
+
+header nav .user {
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2.5rem;
+  color: red;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.75rem;
+}
+
+@media (max-width: 800px) {
+  header nav {
+  
+    justify-content: flex-start;
+    
+  }
+  header nav .left {
+    display: none;
+  }
+  header nav .right {
+    display: none;
+  }
+  header nav .user {
+    display: flex;
+  }
+}

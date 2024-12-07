@@ -1,0 +1,112 @@
+.one {
+  height: 60vh;
+  background-image: url(../assets/images/81f3ff974d82520780078ba1cfbd453a1583259680.avif);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2rem;
+  padding-top: 4rem;
+ 
+}
+.one .logo {
+  width: clamp(150px, 30vw, 300px);
+}
+.one .logo img {
+  width: 100%;
+}
+.one .text {
+  font-size: clamp(20px, 4vw, 36px);
+  color: white;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+
+.one .search-container {
+  background-color: white;
+  padding: 1.75rem 1.5rem;
+  width: min(100%, 700px);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.one .search-container .location {
+
+  display: flex;
+  gap: 1rem;
+  width: 35%;
+  margin-right: 1.5rem;
+}
+.one .search-container .location i {
+  color: rgb(255, 126, 139);
+  font-size: 1.8rem;
+  cursor: pointer;
+ 
+}
+.one .search-container .location input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.one .search-container .search {
+  
+  width: 65%;
+  display: flex;
+  gap: 1.5rem;
+}
+.one .search-container .search i {
+  font-size: 1.8rem;
+  color: gray;
+cursor: pointer;
+  padding-left: 1.5rem;
+  border-left: 2px solid lightgray;
+}
+.one .search-container .search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.one .search-container .search input::placeholder {
+  font-size: 1.6rem;
+}
+
+
+@media(max-width:700px)
+{
+  .one .search-container {
+    background-color: transparent;
+    padding:0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    gap: 1rem;
+  }
+  .one .search-container .location {
+    background-color: white;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-right: 0;   
+     padding: 1.75rem 1.5rem;
+     border-radius: 1rem;
+  }
+  .one .search-container .search {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.75rem 1.5rem;
+    border-radius: 1rem;
+  }
+}

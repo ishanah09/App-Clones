@@ -1,0 +1,83 @@
+.four {
+  width: 100%;
+  padding: 4rem 1.5rem;
+
+}
+.four .container {
+ 
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.four .container .heading {
+  font-size: clamp(1.6rem, 5vw, 3.5rem);
+  margin-bottom: 3rem;
+  color: rgb(54, 54, 54);
+  font-weight: 200;
+}
+
+.four .container .options {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+}
+
+.four .container .option {
+  border-radius: 0.8rem;
+  border: 1px solid rgb(232, 232, 232);
+  box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 30%;
+  gap: 1rem;
+  padding: 1.5rem;
+  cursor: pointer;
+ 
+}
+.four .container .option:hover {
+  box-shadow: rgba(28, 28, 28, 0.08) 0px 4px 8px;
+}
+.four .container .option .text {
+}
+.four .container .option .text p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  letter-spacing:.5px;
+}
+.four .container .option .text span {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.four .container .see-more{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ font-size: 16px;
+}
+
+
+@media(max-width:500px)
+
+{
+  .four {
+ 
+    padding: 6rem 1.5rem;
+ 
+  }
+  .four .container .options {
+    flex-direction: column;
+
+  }
+  .four .container .option {
+   width: 100%;
+  }
+  .four .container .heading {
+
+    margin-bottom: 2rem;
+  }
+}

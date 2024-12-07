@@ -1,0 +1,45 @@
+.last {
+  width: 100%;
+  padding: 5rem 1rem;
+}
+.last .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.last .container .heading {
+  font-size: clamp(25px, 5vw, 30px);
+  margin-bottom: 2rem;
+  color: #363636;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.last .container .explore {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 2rem;
+}
+.last .container .explore .option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 0.8rem;
+  padding: 2rem 2.4rem;
+
+  cursor: pointer;
+}
+.last .container .explore .option p {
+  color: #1c1c1c;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.last .container .explore .option i {
+  font-size: 15px;
+  color: #1c1c1c;
+}

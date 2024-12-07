@@ -1,0 +1,114 @@
+.five {
+  background-color: #fffBf7;
+ 
+  width: 100%;
+  padding: 4rem 1rem;
+}
+
+.five .container {
+
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.five .container .image {
+  width: 50%;
+}
+.five .container .image img {
+  width: 80%;
+}
+
+.five .container .text-content {
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+.five .container .text-content .about {
+}
+.five .container .text-content .about p {
+  font-size: clamp(3rem, 4vw, 4.4rem);
+
+  color: #1c1c1c;
+  margin-bottom: 1.5rem;
+}
+
+.five .container .text-content .about span {
+  font-size: 1.6rem;
+  color: #363636;
+  margin-bottom: 2.5rem;
+}
+
+.five .container .text-content .email {
+  margin-top: 25px;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.five .container .text-content .email .phone {
+  margin-right: 75px;
+}
+
+.five .container .text-content .email .phone label {
+  font-size: 1.6rem;
+  margin-left: 5px;
+}
+
+.five input[type="radio"] {
+  accent-color: rgb(239, 79, 95);
+}
+
+.five .container .text-content .app-link {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.five .container .text-content .app-link input {
+  padding: 13px 12px;
+
+  border-radius: 0.8rem;
+  border: 1px solid #9c9c9c;
+  width: 100%;
+}
+.five .container .text-content .app-link input::placeholder {
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.five .container .text-content .app-link .btn {
+  background-color: #ef4f5f;
+  color: white;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+  white-space: nowrap;
+}
+
+.five .container .text-content .store .caption {
+  color: #9c9c9c;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.five .container .text-content .store .buttons {
+  display: flex;
+  gap: 2rem;
+}
+.five .container .text-content .store .buttons img {
+  width: 14rem;
+}
+
+@media (max-width: 800px) {
+  .five .container .image {
+    display: none;
+  }
+
+  .five .container .text-content {
+    width: 100%;
+  }
+}
